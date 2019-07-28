@@ -12,4 +12,4 @@ This project is a user study interface to examine how different orderings of Sta
 <br/>
 For the dimension ordering tool, please see: https://github.com/lydia96/star-glyph-study
 <br/>
-For more details, please see paper: Evaluating Ordering Strategies of Star Glyph Axes
+For more details about the study and restuls, please see paper: Evaluating Ordering Strategies of Star Glyph Axes
