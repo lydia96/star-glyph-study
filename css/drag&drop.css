@@ -1,0 +1,59 @@
+/*
+  drag and drop target style
+  Adapted from "Pure JS drag and drop functionality" by Byron Glover,
+  Source: https://codepen.io/byronglover/pen/oxjgEK
+*/
+
+#target1 {
+    height: 600px;
+    width: 40%;
+    margin: 25px;
+    border: 1px black solid;
+    float: left;
+    overflow: auto;
+}
+
+#target_Test,#targetAA {
+    height: 300px;
+    width: 40%;
+    margin: 25px;
+    border: 1px black solid;
+    float: left;
+    overflow: auto;
+}
+
+.targets {
+    width: 40%;
+    margin-left: 25px;
+    border: 1px black solid;
+    float: left;
+    overflow: auto;
+}
+
+.drag-enter {
+}
+
+.box {
+    width: auto;
+    height: auto;
+    float: left;
+    display: block;
+}
+
+.navy {
+    background-color: navy;
+    height: 100px;
+    width: 100px;
+}
+
+.red {
+    background-color: firebrick;
+}
+
+.green {
+    background-color: darkgreen;
+}
+
+.orange {
+    background-color: orange;
+}

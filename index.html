@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Study: SG Grouping Task</title>
+<head>
+    <link rel="stylesheet" href="css/Raleway.css">
+    <link rel="stylesheet" href="css/drag&drop.css">
+    <link rel="stylesheet" href="css/sgVis.css">
+    <link rel="stylesheet" href="css/formWizard.css">
+</head>
+<body id="index">
+
+<form id="regForm">
+    <a href="https://www.vis.uni-konstanz.de/"><img id="icon" src="favicon.ico" style="float: right" width="55 px"></a>
+    <!-- One "tab" for each step in the form: -->
+
+    <!--First Page: Greetings-->
+    <div class="tab" id="page1">
+        <h1>Welcome to our study!</h1>
+    </div>
+
+    <!--Second Page: gathering basic info-->
+    <div class="tab" id="page2">
+        <h2>Demographics</h2><br>
+        ID:
+        <p><input oninput="this.className = ''" name="fname" id="fname" value="0" disabled></p>
+
+        <div>
+            Gender:
+            <input type="radio" oninput="this.className = ''" name="gender" id="male" value="male" checked/>Male
+            <input type="radio" oninput="this.className = ''" name="gender" id="female" value="female"/>Female
+            <input type="radio" oninput="this.className = ''" name="gender" id="diverse" value="diverse"/>Diverse
+        </div>
+        <br>
+        <div>Age:<br>
+            <p><input oninput="this.className = ''" name="age" id="age" placeholder="23"></p>
+        </div>
+
+        <div>
+            <input type="checkbox" id="vision" value="vision" checked>I do have normal or corrected to normal vision
+        </div>
+        <br>
+        <div>Degree: I am a
+            <input type="radio" oninput="this.className = ''" name="degree" id="bachelor" value="bachelor" checked/>Bachelor
+            <input type="radio" oninput="this.className = ''" name="degree" id="master" value="Master"/>Master
+            <input type="radio" oninput="this.className = ''" name="degree" id="phd" value="phd"/>PhD Student
+            <input type="radio" oninput="this.className = ''" name="degree" id="other" value="other"/>Other
+        </div>
+        <div>
+            <br>
+            Course of Study/Occupation:<br>
+            <p><input oninput="this.className = ''" name="course" id="course" placeholder="Computer Science"></p>
+        </div>
+        <div>I have previous knowledge in:
+            <br>
+            <br>
+            <input type="checkbox" oninput="this.className = ''" id="knowledge_DA" value="knowledge_DA" checked/>Data
+            Analysis
+            <br>
+            <br>
+            <input type="checkbox" oninput="this.className = ''" id="knowledge_DV" value="knowledge_DV"/>Data
+            Visualizations
+            <br>
+            <br>
+
+            <div id="knowledge1">
+                <input type="checkbox" oninput="this.className = ''" id="knowledge_SG" value="knowledge_SG"/>Star Glyphs
+            </div>
+        </div>
+    </div>
+
+    <!--5th Page: basic info about SG-->
+
+    <div class="tab" id="page5">
+        <h2>What is Star Glyph(SG)?</h2>
+
+        <h3>- Imagine you're browsing for a car:</h3>
+        <div class="split left">
+            <img src="img/car.png" width="400px">
+            <img src="img/sg.png" width="450px">
+        </div>
+        <div class="split right">
+            <img src="img/sg2.png" width="650px">
+        </div>
+    </div>
+
+
+    <!-- 6th Page: SG Tool-->
+
+    <div class="tab" id="sgGrouping">
+        <h2 id="header_sg">Star Glyph</h2>
+        <h3>Drag & Drop the glyphs to the clusters. Add and remove the number of clusters. </h3>
+
+        <div data-drop-target="true" id="target1">
+            <div id="targetA_box0" draggable="true" class="box"></div>
+            <div id="targetA_box1" draggable="true" class="box"></div>
+            <div id="targetA_box2" draggable="true" class="box"></div>
+            <div id="targetA_box3" draggable="true" class="box"></div>
+            <div id="targetA_box4" draggable="true" class="box"></div>
+            <div id="targetA_box5" draggable="true" class="box"></div>
+            <div id="targetA_box6" draggable="true" class="box"></div>
+            <div id="targetA_box7" draggable="true" class="box"></div>
+            <div id="targetA_box8" draggable="true" class="box"></div>
+            <div id="targetA_box9" draggable="true" class="box"></div>
+            <div id="targetA_box10" draggable="true" class="box"></div>
+            <div id="targetA_box11" draggable="true" class="box"></div>
+            <div id="targetA_box12" draggable="true" class="box"></div>
+            <div id="targetA_box13" draggable="true" class="box"></div>
+            <div id="targetA_box14" draggable="true" class="box"></div>
+            <div id="targetA_box15" draggable="true" class="box"></div>
+            <div id="targetA_box16" draggable="true" class="box"></div>
+            <div id="targetA_box17" draggable="true" class="box"></div>
+            <div id="targetA_box18" draggable="true" class="box"></div>
+            <div id="targetA_box19" draggable="true" class="box"></div>
+            <div id="targetA_box20" draggable="true" class="box"></div>
+            <div id="targetA_box21" draggable="true" class="box"></div>
+            <div id="targetA_box22" draggable="true" class="box"></div>
+            <div id="targetA_box23" draggable="true" class="box"></div>
+            <div id="targetA_box24" draggable="true" class="box"></div>
+            <div id="targetA_box25" draggable="true" class="box"></div>
+            <div id="targetA_box26" draggable="true" class="box"></div>
+            <div id="targetA_box27" draggable="true" class="box"></div>
+            <div id="targetA_box28" draggable="true" class="box"></div>
+            <div id="targetA_box29" draggable="true" class="box"></div>
+            <div id="targetA_box30" draggable="true" class="box"></div>
+            <div id="targetA_box31" draggable="true" class="box"></div>
+            <div id="targetA_box32" draggable="true" class="box"></div>
+            <div id="targetA_box33" draggable="true" class="box"></div>
+            <div id="targetA_box34" draggable="true" class="box"></div>
+            <div id="targetA_box35" draggable="true" class="box"></div>
+            <div id="targetA_box36" draggable="true" class="box"></div>
+            <div id="targetA_box37" draggable="true" class="box"></div>
+            <div id="targetA_box38" draggable="true" class="box"></div>
+            <div id="targetA_box39" draggable="true" class="box"></div>
+            <div id="targetA_box40" draggable="true" class="box"></div>
+            <div id="targetA_box41" draggable="true" class="box"></div>
+            <div id="targetA_box42" draggable="true" class="box"></div>
+            <div id="targetA_box43" draggable="true" class="box"></div>
+            <div id="targetA_box44" draggable="true" class="box"></div>
+            <div id="targetA_box45" draggable="true" class="box"></div>
+            <div id="targetA_box46" draggable="true" class="box"></div>
+            <div id="targetA_box47" draggable="true" class="box"></div>
+            <div id="targetA_box48" draggable="true" class="box"></div>
+            <div id="targetA_box49" draggable="true" class="box"></div>
+        </div>
+
+        <div data-drop-target="true" id="target2" class="targets" style="display:none;"></div>
+        <div data-drop-target="true" id="target3" class="targets" style="display:none;"></div>
+        <div data-drop-target="true" id="target4" class="targets" style="display:none;"></div>
+        <div data-drop-target="true" id="target5" class="targets" style="display:none;"></div>
+        <div data-drop-target="true" id="target6" class="targets" style="display:none;"></div>
+        <div data-drop-target="true" id="target7" class="targets" style="display:none;"></div>
+        <div data-drop-target="true" id="target8" class="targets" style="display:none;"></div>
+        <div data-drop-target="true" id="target9" class="targets" style="display:none;"></div>
+
+        <div id="confidence_test_sg">
+            <h4>I am confident that my grouping result is correct:</h4>
+            <table id="likertScale_test_sg" style="left: 15%;">
+                <tr>
+                    <th><input type="radio" id="strong_Disagree_test_sg" name="ls" value="-3"></th>
+                    <th><input type="radio" id="Disagree_test_sg" name="ls" value="-2"></th>
+                    <th><input type="radio" id="MoreOrLess_Disagree_test_sg" name="ls" value="-1"></th>
+                    <th><input type="radio" id="Neutral_test_sg" name="ls" value="0"></th>
+                    <th><input type="radio" id="MoreOrLess_Agree_test_sg" name="ls" value="1"></th>
+                    <th><input type="radio" id="Agree_test_sg" name="ls" value="2"></th>
+                    <th><input type="radio" id="strong_Agree_test_sg" name="ls" value="3"></th>
+                </tr>
+                <tr>
+                    <td align="center">Strongly Disagree</td>
+                    <td align="center">Disagree</td>
+                    <td align="center">More or Less Disagree</td>
+                    <td align="center">Undecided</td>
+                    <td align="center">More or Less Agree</td>
+                    <td align="center">Agree</td>
+                    <td align="center">Strongly Agree</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <!--7th Page: Break-->
+    <div class="tab" id="break_sg">
+        <h1 id="text_sg">Break Time</h1>
+        <div id="sg_img" style="display: none; padding-bottom: 20px"><img src="img/sg_overview.png"></div>
+        <div id="questions_SG" style="display: none">
+            <h4><input type="checkbox" id="questions_StarGlyph"> I understand the concept of star glyphs and know how to
+                use the tool.</h4>
+        </div>
+    </div>
+
+    <!--9th Page: Final Page-->
+    <div class="tab" id="final">
+        <h1>Thanks for your participation!</h1>
+    </div>
+
+    <div style="overflow:auto;" id="buttons">
+        <div id="imprint" style="left: 30px;bottom: 30px; position: absolute;"> <a href="https://www.vis.uni-konstanz.de/impressum/">Imprint</a> &nbsp; | &nbsp; <a href="dataProtection.html"> Data Protection</a></div>
+
+        <div style="right: 30px; bottom: 20px; position: absolute;">
+            <button type="button" id="newClass" onclick="appendClass()" style="display:none;">Add Cluster</button>
+            <br><br>
+            <button type="button" id="deleteClass" onclick="cutClass()" style="display:none;">Cut Cluster</button>
+            <br><br>
+            <button type="button" id="nextBtn" onclick="nextPrev();createObject();">Next</button>
+        </div>
+    </div>
+    <div style="text-align:center;margin-top:40px;">
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+    </div>
+
+</form>
+</body>
+
+<script src="js/d3.v3.min.js"></script>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/formWizard.js"></script>
+<script src="js/drag.js"></script>
+<script src="js/sgVis.js"></script>
+<script src="js/index.js"></script>
+</html>

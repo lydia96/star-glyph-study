@@ -1,0 +1,202 @@
+/*
+  Page style and transformation
+  form wizard partly adapted from https://mzntech.com/edu/howto/tryit.asp?filename=tryhow_js_form_steps
+ */
+* {
+    box-sizing: border-box;
+}
+
+#index {
+    background-color: #f1f1f1;
+    min-height: 100%;
+    position: fixed;
+    overflow-y: auto;
+    width: 100%;
+}
+
+#dataProtection {
+    background-color: #f1f1f1;
+    min-height: 100%;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+#regForm {
+    background-color: #ffffff;
+    font-family: Raleway;
+    padding: 40px;
+    width: 100%;
+    min-height: 100vh;
+    min-width: 300px;
+}
+
+h1 {
+    text-align: center;
+    padding: 250px 0;
+}
+
+#fname,#age,#course {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+    background-color: #ffdddd;
+}
+
+#questions, #questions_StarGlyph, #vision, #other, #knowledge_DA, #knowledge_DV, #knowledge_SG, #bachelor, #master, #phd, #male, #female, #diverse {
+    width: auto;
+    padding: 20px;
+}
+
+/* Hide all steps by default: */
+.tab {
+    display: none;
+    width: 100%;
+    min-height: 70vh;
+}
+
+#nextBtn {
+    background-color: steelblue;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+    width: 123px;
+}
+
+#nextBtn:hover {
+    opacity: 0.8;
+}
+
+#newClass {
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+    width: 123px;
+}
+
+#newClass:hover {
+    opacity: 0.8;
+}
+
+#deleteClass {
+    background-color: #af504c;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+    width: 123px;
+}
+
+#deleteClass:hover {
+    opacity: 0.8;
+}
+
+#prevBtn {
+    background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    opacity: 0;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.step.active {
+    opacity: 0;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #4CAF50;
+}
+
+.split {
+    height: 70%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 15%;
+    bottom: 15%;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+#likertScale td {
+    width: 170px;
+}
+
+#likertScale_test td {
+    width: 170px;
+}
+
+
+#likertScale_test_sg td {
+    width: 170px;
+}
+
+.center {
+    text-align: center;
+    vertical-align: middle;
+}
+
+td input[type="radio"] {
+    float: left;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#confidence, #confidence_test{
+    display: none;
+}
+
+#confidence_test_sg{
+    display: none;
+    position: absolute;
+    background-color: white;
+    bottom: 100px;
+}
+
+#likertScale_test, #likertScale{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sg_img{
+    margin-left: auto;
+    margin-right: auto;
+}
